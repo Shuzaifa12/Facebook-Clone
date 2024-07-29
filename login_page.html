@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook Log-in Page</title>
+  </head>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+    body {
+      background-color: rgb(240, 240, 240);
+    }
+    header .main {
+      display: flex;
+      justify-content: space-around;
+    }
+    .left {
+      height: fit-content;
+      margin: 11rem 0px;
+      margin-left: 180px;
+    }
+    .left h3 {
+      color: rgb(21, 122, 217);
+      font-size: 60px;
+      margin: 5px 0px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .left .para {
+      color: black;
+      font-size: 25px;
+      width: 30rem;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .right {
+      border-radius: 8px;
+      background-color: white;
+      width: 400px;
+      height: 350px;
+      margin: 120px;
+    }
+    .right .up {
+      border-radius: 8px;
+      width: 350px;
+      height: 30px;
+      margin: 13px;
+      font-weight: 20px;
+      padding: 10px;
+      font-size: 15px;
+      border: 1px solid rgb(209, 205, 205);
+    }
+    .right .down {
+      border-radius: 8px;
+      width: 350px;
+      height: 30px;
+      margin: 13px;
+      margin-top: 0px;
+      font-weight: 20px;
+      padding: 10px;
+      font-size: 15px;
+      border: 1px solid rgb(209, 205, 205);
+    }
+    .right button {
+      cursor: pointer;
+      border-radius: 8px;
+      width: 370px;
+      height: 50px;
+      margin: 13px;
+      margin-top: 0px;
+      font-weight: bolder;
+      padding: 10px;
+      font-size: 20px;
+      color: white;
+      border: 1px solid rgb(209, 205, 205);
+      background-color: rgb(0, 116, 198);
+    }
+    .right a {
+      margin-left: 140px;
+      color: rgb(16, 71, 210);
+    }
+    hr {
+      margin: 20px;
+    }
+    .right .last_button {
+      background-color: rgb(11, 189, 11);
+      width: fit-content;
+      font-size: medium;
+      margin-left: 120px;
+    }
+
+    @media screen and (max-width: 1024px) {
+      .left > h3 {
+        font-size: 45px;
+        margin: 5px auto;
+      }
+      .left > .para {
+        font-size: 20px;
+        width: 30rem;
+      }
+      .right {
+        margin-right: 100px;
+        width: 350px;
+        height: 300px;
+      }
+      .right .up {
+        width: 300px;
+        height: 25px;
+      }
+      .right .down {
+        width: 300px;
+        height: 25px;
+      }
+      .right button {
+        width: 320px;
+        height: 40px;
+        padding: 8px;
+      }
+      .right a {
+        margin-left: 120px;
+        color: rgb(16, 71, 210);
+      }
+      .right .last_button {
+        margin-left: 100px;
+      }
+    }
+  </style>
+  <body>
+    <header>
+      <div class="main">
+        <div class="left">
+          <h3>facebook</h3>
+          <div class="para">
+            <p>
+              Facebook helps you connect and share with the people in your life.
+            </p>
+          </div>
+        </div>
+        <div class="right">
+          <form action="backend.php">
+            <input
+              type="text"
+              ,
+              placeholder="Email address or phone number"
+              ,
+              class="up"
+            />
+            <input type="password" , placeholder="Password" , class="down" />
+            <button>Log in</button>
+            <p><a href="relative">Forgotten password?</a></p>
+            <hr />
+            <button class="last_button">Create new account</button>
+          </form>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
